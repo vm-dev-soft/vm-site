@@ -1,0 +1,44 @@
+
+@media only screen and (max-width: 640px) {
+	.introduce:nth-child(odd) .description {
+		float: none;
+	}
+
+	.introduce .wrap-image img {
+		display: table-cell;
+		margin: 0 auto;
+	}
+
+	.our-team li {
+		float: none;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.introduce [class*='col-'] {
+		padding: 0px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (orientation: landscape) {
+	.introduce .wrap-image img {
+		height: auto;
+		width: 100%;
+	}
+
+/*	.introduce {
+		display: table;
+	}
+
+	.introduce [class*="col-md-6"] {
+		display: table-cell;
+		float: none;
+		width: 50%;
+	}
+*/
+	.introduce .wrap-image {
+		vertical-align: middle;
+	}
+
+}

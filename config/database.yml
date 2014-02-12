@@ -12,7 +12,7 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  adapter: mysql2
+  adapter: sqlite3
   database: vm_development
   username: root
   password: 

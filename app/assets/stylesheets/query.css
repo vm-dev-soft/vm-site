@@ -19,6 +19,19 @@
 	.introduce [class*='col-'] {
 		padding: 0px;
 	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.page-wrapper >.row {
+		padding: 0 20px;
+	}
+
+	#header .navbar-collapse {
+		background: #f6f6f6;
+	}
+	
 }
 
 @media only screen and (min-width: 641px) and (orientation: landscape) {
@@ -27,16 +40,6 @@
 		width: 100%;
 	}
 
-/*	.introduce {
-		display: table;
-	}
-
-	.introduce [class*="col-md-6"] {
-		display: table-cell;
-		float: none;
-		width: 50%;
-	}
-*/
 	.introduce .wrap-image {
 		vertical-align: middle;
 	}

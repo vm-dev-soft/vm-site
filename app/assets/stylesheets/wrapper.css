@@ -1,7 +1,12 @@
 
-.page-wrapper {
-	background: #f1f1f1;
-	margin-top: 50px;
+body {
+	background: #fff;
+	padding-top: 70px;
+}
+
+.inside {
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 .page-wrapper p {
@@ -9,12 +14,15 @@
 	line-height: 25px;
 }
 
+.page-wrapper >.row:nth-child(even) {
+	background: #f8f8f8;
+}
+
 .page-wrapper h2 {
 	margin-top: 0px;
 }
 
 .inside >.row {
-	border-bottom: 1px solid #ccc;
 	padding: 30px 0;
 }
 
@@ -28,8 +36,8 @@
 }
 
 .inside textarea.form-control {
-	min-height: 100px;
-	max-height: 200px;
+	height: 230px;
+	resize: none;
 }
 
 form[class*="col-"],
@@ -53,25 +61,10 @@ form .btn {
 	padding: 6px 20px; 
 }
 
-form .row >[class*="col-"] {
-	margin-bottom: 0px;
-	width: 48.5%;
-}
-
-textarea {
-	resize: vertical;
-}
-
 .page-wrapper .row{
 	margin-left: 0px;
 	margin-right: 0px;
 }
-
-/*.introduce .wrap-image img {
-	height: auto;
-	width: 100%;
-}
-*/
 
 .introduce {
 	display: inline-block;
@@ -92,11 +85,6 @@ textarea {
 	float: right;
 }
 
-/*.introduce img {
-	display: table;
-	margin: 0 auto;
-}*/
-
 .our-team {
 	display: inline-block;
 	padding: 20px 0 0;
@@ -112,5 +100,14 @@ textarea {
 
 .our-team h3,
 .our-team p {
+	text-align: center;
+}
+
+.page-wrapper .carousel-inner {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.contact-us h3 {
 	text-align: center;
 }

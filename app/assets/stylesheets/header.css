@@ -43,7 +43,7 @@
 }
 
 .logo {
-	background-image: url('../../../images/logo-vgroup.png');
+	background-image: url('/assets/logo-vgroup.png');
 	background-repeat: no-repeat;
 	display: block;
 	margin-left: 20px;

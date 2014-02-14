@@ -18,6 +18,7 @@
 
 	.introduce [class*='col-'] {
 		padding: 0px;
+		width: 100%;
 	}
 
 }

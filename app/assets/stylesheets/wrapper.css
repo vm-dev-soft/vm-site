@@ -55,10 +55,15 @@ form .row {
 }
 
 form .btn {
-	font-size: 20px;
+	background: #48b4fb;
+	border-radius: 50px;
+	color: #fff;
+	float: right;
+	font-size: 25px;
 	text-transform: uppercase;
-	margin-top: 20px;
-	padding: 6px 20px; 
+	margin: 20px 15px;
+	padding: 6px 50px;
+	outline: none; 
 }
 
 .page-wrapper .row{
@@ -110,4 +115,8 @@ form .btn {
 
 .contact-us h3 {
 	text-align: center;
+}
+
+.ourwork li {
+	list-style: none;
 }

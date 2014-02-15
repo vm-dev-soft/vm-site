@@ -11,16 +11,18 @@ header#header.navbar-fixed-top.navbar.navbar-static-top role="banner"
     nav.collapse.navbar-collapse role="navigation"
       ul#main-menu.nav.navbar-nav.navbar-right
         li
-          a.head href="#ourteam" What
+          a.head href="#introduce" Introduction
         li
-          a.head href="#ourwork" Why
+          a.head href="#ourteam" Our Team
         li
-          a.head href="#contact-us" Contact
+          a.head href="#ourwork" Our Work
+        li
+          a.head href="#contact-us" Contact Us
 section.page-wrapper
   .row
     .inside
       /! begin inside
-      .row.content
+      #introduce.row.content
         .row.introduce
           .col-md-6.col-sm-6.col-xs-6.description
             h2 Web Development
@@ -54,33 +56,45 @@ section.page-wrapper
   .row
     .inside
       /! begin inside
-      #ourwork.row.content
+      #ourwork.row.content.ourwork
         h2 Our work
-        #carousel-ourwork.carousel.slide data-ride="carousel"
-          /! indicator
-          ol.carousel-indicators
-            li.active data-slide-to="0" data-targe="#carousel-ourwork"
-            li.active data-slide-to="1" data-targe="#carousel-ourwork"
-            li.active data-slide-to="2" data-targe="#carousel-ourwork"
-          /! wrapper for slide
-          .carousel-inner
-            .item.active
-              img alt="mywork" src="http://www.agilityio.com/images/c204b509.user-experience.png"
-                .carousel-caption
-                  h3 Our work1
-            .item
-              img alt="mywork" src="http://www.agilityio.com/images/c204b509.user-experience.png"
-                .carousel-caption
-                  h3 Our work2
-            .item
-              img alt="mywork" src="http://www.agilityio.com/images/c204b509.user-experience.png"
-                .carousel-caption
-                  h3 Our work3
-          /! Controls
-          a.left.carousel-control data-slide="prev" href="#carousel-ourwork"
-            span.glyphicon.glyphicon-chevron-left
-          a.right.carousel-control data-slide="next" href="#carousel-ourwork"
-            span.glyphicon.glyphicon-chevron-right
+        ul.row
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
+          li.col-md-4
+            .thumbnail
+              img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+                .caption
+                  h3 Aloe project
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
     /! end inside
   .row
     .inside
@@ -92,16 +106,17 @@ section.page-wrapper
           .col-md-10.col-md-offset-1
             .col-md-5.col-sm-5
               .row
-                input.form-control placeholder="Name" type="name"
+                input.form-control#name placeholder="Name" type="name"
               .row
-                input.form-control placeholder="Email" type="email"
+                input.form-control#email placeholder="Email" type="email"
               .row
-                input.form-control placeholder="Phome" type="text"
+                input.form-control#phone placeholder="Phome" type="text"
               .row
-                input.form-control placeholder="Company" type="text"
+                input.form-control#company placeholder="Company" type="text"
             .col-md-7.col-sm-7
               .row
-                textarea.form-control name="message" placeholder="Message" rows="8"
+                textarea.form-control#messages name="message" placeholder="Message" rows="8"
+            a.btn.center-block#send-mail href="javascript: void(0);" send
     /! end inside
 footer.footer
   .inside.center-block.col-md-8

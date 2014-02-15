@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'rails-assets-bootstrap'
 
+gem 'delayed_job_active_record'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 

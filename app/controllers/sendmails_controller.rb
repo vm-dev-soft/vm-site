@@ -7,7 +7,8 @@ class SendmailsController < ApplicationController
     messages = params[:messages]
 
     if params[:email].present? && params[:messages].present?
-      UserMailer.contact_us(name, email, phone, company, messages, 'contact_us').deliver
+      # UserMailer.contact_us(name, email, phone, company, messages, 'contact_us').deliver
+      UserMailer.delay.contact_us(name, email, phone, company, messages, 'contact_us')
       render :status=> 200, :json => { :message => "Sent email to you "}
     else
       render :status=> 401, :json => { :message => "Not sent"}

@@ -6,11 +6,12 @@ VmSite::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   
-  resources :sendmails, defaults: { format: 'json'} do
-    collection do
-      post :contact_us
-    end
-  end
+  post 'sendmails/contact_us' => 'sendmails#contact_us', defaults: { format: 'json'}
+  # resources :sendmails, defaults: { format: 'json'} do
+  #   collection do
+  #     post :contact_us
+  #   end
+  # end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

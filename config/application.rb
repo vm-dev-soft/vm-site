@@ -25,7 +25,7 @@ module VmSite
       address:              'smtp.gmail.com',
       port:                 587,
       domain:               'example.com',
-      user_name:            'vinhnguyenle.asnet@gmail.com',
+      user_name:            'vinh.nguyenlexuan@gmail.com',
       password:             'abc123$$',
       authentication:       'plain',
       enable_starttls_auto: true  }

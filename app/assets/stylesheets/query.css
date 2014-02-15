@@ -1,3 +1,10 @@
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+	.list-thumbnail {
+		li {
+			width: 100%;
+		}
+	}
+}
 
 @media only screen and (max-width: 640px) {
 	.introduce:nth-child(odd) .description {
@@ -25,10 +32,6 @@
 
 @media only screen and (max-width: 768px) {
 
-	.page-wrapper >.row {
-		padding: 0 20px;
-	}
-
 	#header .navbar-collapse {
 		background: #f6f6f6;
 	}
@@ -46,3 +49,16 @@
 	}
 
 }
+
+@media only screen and (max-width: 992px) {
+	
+	.list-thumbnail {
+		padding: 0 0 0 10px;
+	}
+
+	.list-thumbnail li {
+		padding: 0 10px 0 0;
+	}
+
+}
+

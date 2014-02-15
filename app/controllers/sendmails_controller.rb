@@ -14,4 +14,8 @@ class SendmailsController < ApplicationController
       render :status=> 401, :json => { :message => "Not sent"}
     end
   end
+
+  def show
+    
+  end
 end

@@ -59,47 +59,83 @@ section.page-wrapper
       #ourwork.row.content
         h2 Our work
         ul.row.list-thumbnail
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal1" data-toggle="modal"
+                img alt="project" src="/assets/aloe-thumbnail.png"
+              #modal1.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title Aloe
               .caption
-                h3 Aloe project
+                h3 Aloe
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal2" data-toggle="modal"
+                img alt="project" src="/assets/analysis-thumbnail.png"
+              #modal2.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title Analysis
               .caption
-                h3 Aloe project
+                h3 Analysis
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal3" data-toggle="modal"
+                img alt="project" src="/assets/equitally-thumbnail.png"
+              #modal3.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title equitally-thumbnail
               .caption
-                h3 Aloe project
+                h3 Equitally
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal4" data-toggle="modal"
+                img alt="project" src="/assets/getafive-thumbnail.png"
+              #modal4.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title Getafive
               .caption
-                h3 Aloe project
+                h3 Getafive
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal5" data-toggle="modal"
+                img alt="project" src="/assets/treilla-thumbnail.jpg"
+              #modal5.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title Treilla
               .caption
-                h3 Aloe project
+                h3 Treilla
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
-          li.col-md-4.col-sm-4.col-xs-6
+          li
             .thumbnail
-              .wrapper-image.panel.panel-default
-                img alt="project" src="http://www.agilityio.com/images/web/5febdc5c.nwCoupon_thumbnail.png"
+              .wrapper-image data-target="#modal6" data-toggle="modal"
+                img alt="project" src="/assets/wildfire-thumbnail.png"
+              #modal6.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button"
+                      h4#myModalLabel.modal-title Wildfire
               .caption
-                h3 Aloe project
+                h3 Wildfire
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dolorum, provident explicabo quae corporis dignissimos perferendis molestias voluptatum vel commodi at praesentium voluptatem dolor. Iste nam a sapiente ut consectetur?
     /! end inside
   .row
@@ -123,7 +159,17 @@ section.page-wrapper
             .col-md-7.col-sm-7
               .row
                 textarea#messages.form-control name="message" placeholder="Message" rows="8"
-            a.btn.center-block#send-mail href="javascript: void(0);" send
+            a.btn.center-block#send-mail href="javascript: void(0);" data-target="#send-success" send
+            / a#send.btn.center-block data-target="#send-success" data-toggle="modal"
+            #send-success.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                    h4#myModalLabel.modal-title Congratulation
+                  .modal-body
+                    p The message has been sent!
+                    p We will get in touch with you soon!
     /! end inside
 footer.footer
   .inside.center-block.col-md-8

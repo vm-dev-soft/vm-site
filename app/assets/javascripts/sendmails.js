@@ -40,14 +40,14 @@ jQuery(document).ready(function() {
 
     email = $inputEmail.val();
     valEmail = $.trim(email);
-    console.log('email +' + email);
+    // console.log('email +' + email);
 
     if ((!validateEmail(email)) && email !== ""){
-      console.log('email error');
+      // console.log('email error');
       $inputEmail.addClass('error');   
     }
     else {
-      console.log('email good')
+      // console.log('email good')
       $inputEmail.removeClass('error');
     }
   });
@@ -57,13 +57,13 @@ jQuery(document).ready(function() {
     e.preventDefault();
 
     phone = $inputPhone.val();
-    console.log('phone +' + phone);
+    // console.log('phone +' + phone);
     if (!validatePhone(phone))  {
-      console.log('phone error');
+      // console.log('phone error');
       $inputPhone.addClass('error');
     }
     else {
-      console.log('phone good');
+      // console.log('phone good');
       $inputPhone.removeClass('error');
     }
   });
@@ -73,13 +73,13 @@ jQuery(document).ready(function() {
     e.preventDefault();
 
     name = $inputName.val();
-    console.log('name +' + name);
+    // console.log('name +' + name);
     if ( (!validateText(name)) && name !== "") {
-      console.log('name error');
+      // console.log('name error');
       $inputName.addClass('error');
     }
     else {
-      console.log('name good');
+      // console.log('name good');
       $inputName.removeClass('error');
     }
   });
@@ -89,14 +89,14 @@ jQuery(document).ready(function() {
     e.preventDefault();
 
     company = $inputCompany.val();
-    console.log('company +' + company);
+    // console.log('company +' + company);
 
     if ( (!validateText(company)) && company !== "" ) {
-      console.log('company error');
+      // console.log('company error');
       $inputCompany.addClass('error');
     }
     else {
-      console.log('company good');
+      // console.log('company good');
       $inputCompany.removeClass('error');
     }
   });
@@ -107,15 +107,15 @@ jQuery(document).ready(function() {
     message = $inputMessage.val();
     valMessage = $.trim(message);
 
-    console.log('message : ' + valMessage);
+    // console.log('message : ' + valMessage);
     if(valMessage !== '') {
-      console.log('click send and difference none');
+      // console.log('click send and difference none');
       $inputMessage.removeClass('error');
     }
   });
 
   $('#send-mail').on('click', function(e) {
-    console.log('click button send');
+    // console.log('click button send');
     $input = $('form input');
     name = $('#name').val();
     email = $('#email').val();
@@ -124,7 +124,7 @@ jQuery(document).ready(function() {
     message = $inputMessage.val();
     valName = $.trim(name);
     valMessage = $.trim(message);
-    console.log('message '+ valMessage);
+    // console.log('message '+ valMessage);
 
     if ( valName === "" || valMessage === "" || email === "" ) {
       $inputName.addClass('error');
@@ -144,7 +144,7 @@ jQuery(document).ready(function() {
 
     // 
 
-    else if ((validateEmail(email)) && (valMessage !== "") && (valName !== "") && (validatePhone(phone)) && (validateText(name)) && (validateText(company)) ) {
+    else if ((validateEmail(email)) && (valMessage !== "") && (valName !== "") || (validatePhone(phone)) && (validateText(name)) || (validateText(company)) ) {
       $.ajax({
         type: "POST",
         url: "/sendmails/contact_us",

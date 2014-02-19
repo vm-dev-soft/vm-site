@@ -8,6 +8,6 @@ class UserMailer < ActionMailer::Base
   	@company = company
   	@messages = messages
 
-		mail(:from => @email ,:to => "vinh.nguyenle.webdev@gmail.com", :subject => "[Client] Email from #{@name}", :template_name => template)  	
+		mail(:from => @email ,:to => "vm.contact.soft@gmail.com", :subject => "[Client] Email from #{@name}", :template_name => template)  	
   end
 end

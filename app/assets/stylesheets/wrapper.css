@@ -150,7 +150,7 @@ form .btn {
 	display: table;
 	margin: 0 auto;
 	padding: 0px;
-	text-align: left;
+	text-align: center;
 }
 
 .list-thumbnail li {
@@ -168,6 +168,10 @@ form .btn {
 .list-thumbnail .caption {
 	padding-right: 0px;
 	padding-left: 0px;
+}
+
+.list-thumbnail .caption p {
+	text-align: left;
 }
 .list-thumbnail .wrapper-image {
 	background-color: #f5f5f5;

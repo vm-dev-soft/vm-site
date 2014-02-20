@@ -20,7 +20,7 @@
 		float: none;
 		list-style: none;
 		padding: 0;
-		width: 100% !important;
+		width: 100%;
 	}
 
 	.introduce [class*='col-'] {
@@ -34,10 +34,13 @@
 
 }
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 767px) {
 	#header .navbar-collapse {
 		background: #f6f6f6;
+	}
+
+	#header .inside {
+		padding: 0px;
 	}
 	
 }
@@ -55,10 +58,6 @@
 	.list-thumbnail {
 		padding-left: 0px;
 	}
-
-	/*.list-thumbnail li {
-		padding: 0 10px 0 0;
-	}*/
 
 }
 

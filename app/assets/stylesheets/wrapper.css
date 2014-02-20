@@ -80,6 +80,11 @@ form .btn {
 	display: inline-block;
 }
 
+.introduce .wrap-image img {
+	margin: 0 auto;
+	display: table;
+}
+
 /*.introduce [class*="col-"] {
 	padding: 0px;
 }*/

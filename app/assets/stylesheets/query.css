@@ -1,0 +1,63 @@
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+	.list-thumbnail {
+		li {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.introduce:nth-child(odd) .description {
+		float: none;
+	}
+
+	.introduce .wrap-image img {
+		display: table-cell;
+		margin: 0 auto;
+	}
+
+	.our-team li {
+		float: none;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.introduce [class*='col-'] {
+		padding: 0px;
+		width: 100%;
+	}
+
+	.list-thumbnail .thumbnail {
+		width: auto;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	#header .navbar-collapse {
+		background: #f6f6f6;
+	}
+
+	#header .inside {
+		padding: 0px;
+	}
+	
+}
+
+@media only screen and (min-width: 641px) and (orientation: landscape) {
+
+	.introduce .wrap-image {
+		vertical-align: middle;
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+	
+	.list-thumbnail {
+		padding-left: 0px;
+	}
+
+}
+

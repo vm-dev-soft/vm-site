@@ -1,0 +1,246 @@
+header#header.navbar-fixed-top.navbar.navbar-static-top role="banner"
+  .inside
+    .navbar-header
+      button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      h1
+        a.logo href="/"
+    nav.collapse.navbar-collapse role="navigation"
+      ul#main-menu.nav.navbar-nav.navbar-right
+        li
+          a.head href="#introduce" Introduction
+        li
+          a.head href="#ourteam" Our Team
+        li
+          a.head href="#ourwork" Our Work
+        li
+          a.head href="#contact-us" Contact Us
+section.page-wrapper
+  .row
+    .inside
+      /! begin inside
+      #introduce.row.content
+        .row.introduce
+          .col-md-6.col-sm-6.col-xs-6.description
+            h2 HTML-CSS Design
+            p With experience in HTML-CSS, we are ready to design and build responsive website for all devices. The frameworks we use: Zurb Foundation or Twitter Bootstrap. Projects about HTML-CSS maybe integrated with backend framework like Ruby on Rails.
+          .col-md-6.col-sm-6.col-xs-6.wrap-image
+            img alt="web-development" src="/assets/web-development.png"
+        .row.introduce
+          .col-md-6.col-sm-6.col-xs-6.description
+            h2 Ruby on Rails
+            p Ruby on Rails as the backend platform that we use to build web application. Projects we are working on now usually consists of:
+            ol
+              li Ruby 2.0 
+              li Rails 4 
+              li PostgreSQL
+              li jQuery
+              li Zurb Foundation or Twitter Bootstrap 
+              li RSpec and Capybara
+              li Heroku or Amazon EC2
+              
+          .col-md-6.col-sm-6.col-xs-6.wrap-image
+            img alt="ruby-rails" src="/assets/rails-intro.png"
+    /! end inside
+  .row
+    .inside
+      /! begin inside
+      #ourteam.row.content
+        h2 Our team
+        ul.our-team
+          li
+            .wrap-image
+              img.img-thumbnail.center-block alt="vinhnguyen" src="/assets/vinhnguyen.jpg"
+            h3 Vinh Nguyen Le
+            p With 2 years experience of the web development, but i am currently most fond of Ruby and the excellent collection of resources offered by that language.
+          li
+            .wrap-image
+              img.img-thumbnail.center-block alt="mymai" src="/assets/mymai.jpg"
+            h3 My Mai
+            p I'm a front-end web developer with 1 year experience. The most likely skill is that designs websites for all kinds of mobile devices.
+    /! end inside
+  .row
+    .inside
+      /! begin inside
+      #ourwork.row.content
+        h2 Our work
+        ul.row.list-thumbnail
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal1" data-toggle="modal"
+                img alt="project" src="/assets/policy-thumbnail.png"
+              #modal1.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title Policy Genius
+                    .modal-body
+                      p 
+                        strong Technical: 
+                        | Zurb Foundation, HTML5, CSS3, jQuery
+              .caption
+                h3 Policy Genius
+                p Shopping for insurance is the worst. We're making it better.
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal2" data-toggle="modal"
+                img alt="project" src="/assets/analysis-thumbnail.png"
+              #modal2.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title Wildfire-Analysis
+                    .modal-body
+                      p 
+                        strong Technical: 
+                        | Twitter Bootstrap 2.2, jQuery, Responsive design for ipad. Using Backbone and jQuery Mockjax to render json data.
+              .caption
+                h3 Wildfire-Analysis
+                p Wildfire Analysis is an analysis site where customers can compare information about brands, products on different social networks.
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal3" data-toggle="modal"
+                img alt="project" src="/assets/equitally-thumbnail.png"
+              #modal3.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title Equitally
+                    .modal-body
+                      p 
+                        strong Technical: 
+                      ol
+                        li 
+                          strong Front-end: 
+                          | HTML5, CSS3, jQuery
+                        li 
+                          strong Backend: 
+                          | Ruby on Rails, MySQL, ActiveAdmin
+                        li 
+                          strong Test suite: 
+                          | Rspec, Capybara, VCR.
+                        li 
+                          strong Server: 
+                          | Heroku
+              .caption
+                h3 Equitally
+                p We make equity research relevant. As a finance professional, you have many sources of real-time market data and a cutting-edge infrastructure. But how do you know what matters, what's already expected, and what information is valuable? Equitally provides context and insight to market information. 
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal4" data-toggle="modal"
+                img alt="project" src="/assets/getafive-thumbnail.png"
+              #modal4.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title GetAFive
+                    .modal-body
+                      p 
+                        strong Technical: 
+                      ol
+                        li 
+                          strong Front-end: 
+                          | Twitter Bootstrap 3.0, jQuery, Mathjax
+                        li 
+                          strong Backend: 
+                          | Ruby on Rails, Postgres, ActiveAdmin, Sidekiq
+                        li 
+                          strong Server: 
+                          | Heroku.
+              .caption
+                h3 GetAFive
+                p GetAFive is a online learning space, notably video-based AP test-prep.
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal5" data-toggle="modal"
+                img alt="project" src="/assets/treilla-thumbnail.jpg"
+              #modal5.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title Treilla
+                    .modal-body
+                      p 
+                        strong Technical:
+                      ol
+                        li 
+                          strong Front-end: 
+                          | Twitter Bootstrap 2.2, jQuery
+                        li 
+                          strong Backend: 
+                          | Node.js, Redis, MongoDb, RavenDb
+                        li 
+                          strong Third Party: 
+                          | Datasift
+                        li 
+                          strong Server: 
+                          | Joyend Cloud
+              .caption
+                h3 Treilla
+                p A small business registered for our services and connect to their stream (my Brand) and their domain
+
+          li
+            .thumbnail
+              .wrapper-image data-target="#modal6" data-toggle="modal"
+                img alt="project" src="/assets/wildfire-thumbnail.png"
+              #modal6.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+                .modal-dialog
+                  .modal-content
+                    .modal-header
+                      button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                      h4#myModalLabel.modal-title Wildfire
+                    .modal-body
+                      p 
+                        strong Technical: 
+                        | Twitter Bootstrap 2.2, jQuery, Responsive design
+              .caption
+                h3 Wildfire
+                p WidfireAsia is an online store where customers can receive points by completing tasks, or completing test sheets or  sharing product information on social networks.
+    /! end inside
+  .row
+    .inside
+      /! begin inside
+      #contact-us.row.content.contact-us
+        h2 Contact
+        h3 We'd love to hear about your idea or project.
+        h3 Drop us a note and we'll get in touch with you.
+        form.row
+          .col-md-10.col-md-offset-1
+            .col-md-5.col-sm-5
+              .row
+                input#name.form-control placeholder="Name" type="name"
+              .row
+                input#email.form-control placeholder="Email" type="email"
+              .row
+                input#phone.form-control placeholder="Phone" type="text"
+              .row
+                input#company.form-control placeholder="Company" type="text"
+            .col-md-7.col-sm-7
+              .row
+                textarea#messages.form-control name="message" placeholder="Message" rows="8"
+            a.btn.center-block#send-mail href="javascript: void(0);" data-target="#send-success" send
+            / a#send.btn.center-block data-target="#send-success" data-toggle="modal"
+            #send-success.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close aria-hidden="true" data-dismiss="modal" type="button" X
+                    h4#myModalLabel.modal-title Congratulation
+                  .modal-body
+                    p The message has been sent!
+                    p We will get in touch with you soon!
+    /! end inside
+footer.footer
+  .inside.center-block.col-md-8
+    address
+      | ©2014, VietNam
+    address
+      a href="mailto:vm.contact.soft@gmail.com" vm.contact.soft@gmail.com
